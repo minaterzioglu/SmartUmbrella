@@ -1,7 +1,7 @@
 # SmartUmbrella
 Solar position tracking and adjustment Arduino code for the Mechanical Engineering Senior Capstone Project.
 
-## Overview
+## Project Overview
 A smart umbrella that autonomously adjusts its position based on the sun's position movement to provide increased sun protection and minimize the time, effort, and energy beachgoers spend for position adjustment.
 
 ## Tilting & Rotation Mechanisms
