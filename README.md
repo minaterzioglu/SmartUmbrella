@@ -20,12 +20,21 @@ Arduino Library to calculate the position of the sun relative to geographic coor
 by KenWillmott | https://github.com/KenWillmott/SolarPosition
 
 TinyGPS++ Library
-by Rui Santos | Complete Project Details https://randomnerdtutorials.com
+by Rui Santos 
+Complete Project Details https://randomnerdtutorials.com
 
 ## Modules
 This code uses a NEO-6M GPS module with the Arduino to get GPS data and QMC5583L series chipboards as a compass.
 
 ## Board Hookup Reference
 
+### QMC5883L hookup to Arduino Uno / Nano
+VCC  O ---- O +3.3v
+GND  O ---- O GND
+SCL  O ---- O A5
+SDA  O ---- O A4
+DRDY O ---- X NOT CONNECTED
+
+### NEO-6M GPS hookup to Arduino Uno / Nano
 
 
