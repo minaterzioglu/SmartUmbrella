@@ -41,6 +41,12 @@ Note: If Arduino module HMC5883L(GY-273) does not work with its library, check t
 [QMC5883L Datasheet ](https://www.best-microcontroller-projects.com/support-files/qmc5883l-datasheet-1.0.pdf)\
 [Helpful link to differentiate between 2 chips](https://www.best-microcontroller-projects.com/support-files/qmc5883l-datasheet-1.0.pdf](https://surtrtech.com/2018/02/01/interfacing-hmc8553l-qmc5883-digital-compass-with-arduino/)https://surtrtech.com/2018/02/01/interfacing-hmc8553l-qmc5883-digital-compass-with-arduino/)
 
+### NEO-6M GPS hookup to Arduino
+VCC  O ---- O +5V\
+GND  O ---- O GND\
+RX  O ---- O RX pin\
+TX  O ---- O TX pin
+
 ### Positioning of QMC5883L & Calibration
 - Place horizontal to the ground to get an accurate reading. Three-axis Magnetometers are sensitive to their orientation.
 - Orient the x-axis on the compass in the direction of tilt (top motor, 90°)\
@@ -49,9 +55,3 @@ Note: If Arduino module HMC5883L(GY-273) does not work with its library, check t
 - Adjust the magnetometer reading for the magnetic declination offset. The magnetometer measures magnetic north which is affected by the Earth's magnetic field. Magnetic declination is the angle between magnetic north and true north which changes with geographic location. Solar position algorithms measure solar azimuth and elevation relative to true north, not magnetic north. Get magnetic declination from [this API](https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml#declination)
   
 Note: When QMC5883L is not level, the output bearing will be incorrect. The solution is to compensate for the orientation using an accelerometer in the system to compensate for tilt in the magnetometer. [More information at this link ](https://www.best-microcontroller-projects.com/hmc5883l.html). 
-
-### NEO-6M GPS hookup to Arduino
-VCC  O ---- O +5V\
-GND  O ---- O GND\
-RX  O ---- O RX pin\
-TX  O ---- O TX pin
