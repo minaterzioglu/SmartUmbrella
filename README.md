@@ -24,17 +24,35 @@ by Rui Santos\
 Complete Project Details https://randomnerdtutorials.com
 
 ## Modules
-This code uses a NEO-6M GPS module with the Arduino to get GPS data and QMC5583L series chipboards as a compass.
+This code uses a NEO-6M GPS module with the Arduino to get GPS data and QMC5583L 3-Axis Digital Compass series chipboards as a compass.
 
 ## Board Hookup Reference
+For different boards see [Arduino Wire Reference ](https://pages.github.com/](https://www.arduino.cc/reference/en/language/functions/communication/wire/)) 
 
-### QMC5883L hookup to Arduino Uno / Nano
+### QMC5883L hookup to Arduino
 VCC  O ---- O +3.3v\
 GND  O ---- O GND\
-SCL  O ---- O A5\
-SDA  O ---- O A4\
-DRDY O ---- X NOT CONNECTED\
+SCL  O ---- O SCL pin\
+SDA  O ---- O SDA pin\
+DRDY O ---- X NOT CONNECTED
 
-### NEO-6M GPS hookup to Arduino Uno / Nano
+
+Note: If Arduino module HMC5883L (GY-273) does not work with its library, check and make sure that it is actually HMC5883L, not QMC5883
+[HMC5883L Datasheet] (https://www.best-microcontroller-projects.com/support-files/hmc5883l.pdf)) 
+
+
+QMC5883L
+QMC5883L Datasheet.
+
+How to know it’s a real HMC5883L:
+
+If you try after wiring it with arduino with i2c scanner you gonna find that the address is “0x1E“
+Or if you look on the chip itself it’s marked L883
+How to know it’s a fake one:
+
+If you try after wiring it with arduino with i2c scanner you gonna find that the address is “0x0D” as i found out or something else
+Or if you look on the chip itself it’s marked DA5883
+
+### NEO-6M GPS hookup to Arduino
 
 
