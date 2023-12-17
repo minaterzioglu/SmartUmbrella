@@ -30,21 +30,26 @@ This code uses a NEO-6M GPS module with the Arduino to get GPS data and QMC5583L
 For different boards see [Arduino Wire Reference ](https://www.arduino.cc/reference/en/language/functions/communication/wire/). 
 
 ### QMC5883L hookup to Arduino
-VCC  O ---- O +3.3v\
+VCC  O ---- O +3.3V\
 GND  O ---- O GND\
 SCL  O ---- O SCL pin\
 SDA  O ---- O SDA pin\
 DRDY O ---- X NOT CONNECTED
-
 
 Note: If Arduino module HMC5883L(GY-273) does not work with its library, check to make sure that it's actually HMC5883L, not QMC5883
 [HMC5883L Datasheet ](https://www.best-microcontroller-projects.com/support-files/hmc5883l.pdf)\
 [QMC5883L Datasheet ](https://www.best-microcontroller-projects.com/support-files/qmc5883l-datasheet-1.0.pdf)\
 [Helpful link to differentiate between 2 chips](https://www.best-microcontroller-projects.com/support-files/qmc5883l-datasheet-1.0.pdf](https://surtrtech.com/2018/02/01/interfacing-hmc8553l-qmc5883-digital-compass-with-arduino/)https://surtrtech.com/2018/02/01/interfacing-hmc8553l-qmc5883-digital-compass-with-arduino/)
 
-
-
+### Positioning QMC5883L Relative to the Umbrella
+- Place horizontal to ground get an accurate reading\
+- Orient the x-axis on the compass in the direction of tilt (top motor, 90 degrees)\
+  When the X-axis is aligned with geographic north, the heading reading is approximately 0 degrees, pointing to the north  direction
 
 ### NEO-6M GPS hookup to Arduino
+VCC  O ---- O +5V\
+GND  O ---- O GND\
+RX  O ---- O RX pin\
+TX  O ---- O TX pin\
 
 
