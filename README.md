@@ -27,7 +27,7 @@ Complete Project Details https://randomnerdtutorials.com
 This code uses a NEO-6M GPS module with the Arduino to get GPS data and QMC5583L 3-Axis Digital Compass series chipboards as a compass.
 
 ## Board Hookup Reference
-For different boards see [Arduino Wire Reference ](https://pages.github.com/](https://www.arduino.cc/reference/en/language/functions/communication/wire/)) 
+For different boards see [Arduino Wire Reference ](https://www.arduino.cc/reference/en/language/functions/communication/wire/). 
 
 ### QMC5883L hookup to Arduino
 VCC  O ---- O +3.3v\
@@ -38,7 +38,7 @@ DRDY O ---- X NOT CONNECTED
 
 
 Note: If Arduino module HMC5883L (GY-273) does not work with its library, check and make sure that it is actually HMC5883L, not QMC5883
-[HMC5883L Datasheet] (https://www.best-microcontroller-projects.com/support-files/hmc5883l.pdf)) 
+[HMC5883L Datasheet] (https://www.best-microcontroller-projects.com/support-files/hmc5883l.pdf). 
 
 
 QMC5883L
