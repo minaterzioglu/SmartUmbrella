@@ -1,0 +1,2 @@
+# SmartUmbrella
+Solar position adjustment
