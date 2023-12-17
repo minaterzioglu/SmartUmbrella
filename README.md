@@ -9,7 +9,7 @@ The umbrella is comprised of two parts and a pulley-enabled system. The top part
 
 # Code
 ## Required Libraries
-This code relies on the following libraries
+This code relies on the following libraries:
 
 QMC5883L Compass
 Arduino library for using QMC5583L series chip boards as a compass\
@@ -50,6 +50,4 @@ Note: If Arduino module HMC5883L(GY-273) does not work with its library, check t
 VCC  O ---- O +5V\
 GND  O ---- O GND\
 RX  O ---- O RX pin\
-TX  O ---- O TX pin\
-
-
+TX  O ---- O TX pin
