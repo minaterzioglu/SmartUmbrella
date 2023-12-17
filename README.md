@@ -36,7 +36,7 @@ SCL  O ---- O SCL pin\
 SDA  O ---- O SDA pin\
 DRDY O ---- X NOT CONNECTED
 
-Note: If Arduino module HMC5883L(GY-273) does not work with its library, check to make sure that it's actually HMC5883L, not QMC5883
+Note: If Arduino module HMC5883L(GY-273) does not work with its library, check to make sure that it's actually HMC5883L, not QMC5883\
 [HMC5883L Datasheet ](https://www.best-microcontroller-projects.com/support-files/hmc5883l.pdf)\
 [QMC5883L Datasheet ](https://www.best-microcontroller-projects.com/support-files/qmc5883l-datasheet-1.0.pdf)\
 [Helpful link to differentiate between 2 chips](https://www.best-microcontroller-projects.com/support-files/qmc5883l-datasheet-1.0.pdf](https://surtrtech.com/2018/02/01/interfacing-hmc8553l-qmc5883-digital-compass-with-arduino/)https://surtrtech.com/2018/02/01/interfacing-hmc8553l-qmc5883-digital-compass-with-arduino/)
