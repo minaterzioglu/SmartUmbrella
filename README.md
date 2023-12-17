@@ -30,10 +30,7 @@ This code uses a NEO-6M GPS module with the Arduino to get GPS data and QMC5583L
 
 ### QMC5883L hookup to Arduino Uno / Nano
 VCC  O ---- O +3.3v
-GND  O ---- O GND
-SCL  O ---- O A5
-SDA  O ---- O A4
-DRDY O ---- X NOT CONNECTED
+hjakshjsdahkds
 
 ### NEO-6M GPS hookup to Arduino Uno / Nano
 
