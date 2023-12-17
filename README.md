@@ -29,7 +29,7 @@ This code uses a NEO-6M GPS module with the Arduino to get GPS data and QMC5583L
 ## Board Hookup Reference
 For different boards see [Arduino Wire Reference ](https://www.arduino.cc/reference/en/language/functions/communication/wire/). 
 
-## QMC5883L hookup to Arduino
+### QMC5883L hookup to Arduino
 VCC  O ---- O +3.3V\
 GND  O ---- O GND\
 SCL  O ---- O SCL pin\
@@ -50,7 +50,7 @@ Note: If Arduino module HMC5883L(GY-273) does not work with its library, check t
   
 Note: When QMC5883L is not level, the output bearing will be incorrect. The solution is to compensate for the orientation using an accelerometer in the system to compensate for tilt in the magnetometer. [More information at this link ](https://www.best-microcontroller-projects.com/hmc5883l.html). 
 
-## NEO-6M GPS hookup to Arduino
+### NEO-6M GPS hookup to Arduino
 VCC  O ---- O +5V\
 GND  O ---- O GND\
 RX  O ---- O RX pin\
