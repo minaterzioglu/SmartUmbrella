@@ -38,20 +38,12 @@ DRDY O ---- X NOT CONNECTED
 
 
 Note: If Arduino module HMC5883L (GY-273) does not work with its library, check and make sure that it is actually HMC5883L, not QMC5883
-[HMC5883L Datasheet] (https://www.best-microcontroller-projects.com/support-files/hmc5883l.pdf). 
+[HMC5883L Datasheet ](https://www.best-microcontroller-projects.com/support-files/hmc5883l.pdf)\
+[QMC5883L Datasheet ](https://www.best-microcontroller-projects.com/support-files/qmc5883l-datasheet-1.0.pdf)\
+[Helpful link to differentiate between 2 chips]([https://www.best-microcontroller-projects.com/support-files/qmc5883l-datasheet-1.0.pdf](https://surtrtech.com/2018/02/01/interfacing-hmc8553l-qmc5883-digital-compass-with-arduino/)https://surtrtech.com/2018/02/01/interfacing-hmc8553l-qmc5883-digital-compass-with-arduino/)\
 
 
-QMC5883L
-QMC5883L Datasheet.
 
-How to know it’s a real HMC5883L:
-
-If you try after wiring it with arduino with i2c scanner you gonna find that the address is “0x1E“
-Or if you look on the chip itself it’s marked L883
-How to know it’s a fake one:
-
-If you try after wiring it with arduino with i2c scanner you gonna find that the address is “0x0D” as i found out or something else
-Or if you look on the chip itself it’s marked DA5883
 
 ### NEO-6M GPS hookup to Arduino
 
