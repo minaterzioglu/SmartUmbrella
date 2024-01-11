@@ -55,3 +55,20 @@ TX  O ---- O TX pin
 - Adjust the magnetometer reading for the magnetic declination offset. The magnetometer measures magnetic north which is affected by the Earth's magnetic field. Magnetic declination is the angle between magnetic north and true north which changes with geographic location. Solar position algorithms measure solar azimuth and elevation relative to true north, not magnetic north. Get magnetic declination from [this API](https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml#declination)
   
 Note: When QMC5883L is not level, the output bearing will be incorrect. Using an accelerometer will compensate for the tilt in the magnetometer. [More information at this link ](https://www.best-microcontroller-projects.com/hmc5883l.html). 
+
+
+
+Code output snapshot from a testing session:
+
+15:37:21.240 -> Solar Azimuth: 233.27 degrees, Elevation: 4.42 degrees
+15:37:21.247 ->  Azimuth: -8 Bearing: 15
+15:37:23.253 ->  Counter: 1
+15:37:23.253 -> Wanted Azimuth: 233.27 Current Azimuth: -8 Wanted Elevation: 4.42 Current Elevation:   90.00 Azimuth Difference: 241.27
+15:37:23.381 ->  Azimuth difference is positive
+15:37:27.826 -> Bottom Motor moved to new position
+15:37:27.884 -> current azimuth: 233
+15:37:29.825 ->  Elevation Difference: -85.58
+15:37:29.857 -> Elevation difference is negative
+15:37:32.755 ->  Top motor moved to new position
+15:37:32.786 -> current elevation: 4.42
+
